@@ -29,7 +29,13 @@
 			echo "Age conforme" . "<br>";
 		}
 	}
-		
+	
+	if (empty($_POST['classe'])) { // Champs de la Classe
+		echo "Erreur de classe" . "<br>";
+		}
+		else {
+			echo "Classe conforme" . "<br>";
+	}	
 
 	if (file_exists($_POST['cv'])){ // Verification  du CV
 		echo "Le fichier n'est pas présent" . "<br>";
